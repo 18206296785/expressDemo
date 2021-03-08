@@ -1,0 +1,23 @@
+style
+  include ./index.css
+
+//-
+  @author: 张雨生
+  验证码组件
+  功能: 用于手机号、邮箱验证码的录入
+  @param {Number} initialTime 验证码倒计时时间
+  @param {Number} codeLength  验证码长度
+
+mixin verificationCode (initialTime = 60, codeLength = 4)
+  - var n = 0
+  ul.code-container&attributes(attributes)= name
+    while n < codeLength
+      - n++
+      li.item-code
+        input(maxlength="1" type='tel' pattern="\d*")
+  .code-count-down
+    p 重新获取
+      span.time-count-down (#{initialTime}s)
+
+script
+  include ./index.js

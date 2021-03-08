@@ -1,0 +1,27 @@
+extends ../../../layout
+
+block content
+  style
+    include ./index.css
+
+  block components
+
+  block loginRegister
+    .login-register-layout
+      .login-register-header
+        block operate
+          .go-back
+            img(src="/images/back.png")
+        .customer-service
+          p 客服
+      .login-register-main
+        .login-register-title.center
+          img.logo(src="/images/logo-login.png")
+          block title
+            h5 输入验证码
+        .login-register-decs
+          block desc
+        .login-register-info
+          block info
+
+  block scripts

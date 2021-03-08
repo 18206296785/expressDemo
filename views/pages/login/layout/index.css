@@ -1,0 +1,60 @@
+.login-register-header {
+  display: flex;
+  padding: 0 .4rem;
+  justify-content: space-between;
+  height: 1.17rem;
+  line-height: 1.17rem;
+}
+
+.login-register-header .go-back img {
+  width: .24rem;
+  height: .45rem;
+}
+
+.login-register-header .customer-service {
+  font-size: .37rem;
+}
+
+.login-register-main {
+  padding: .33rem .73rem 0;
+}
+
+.login-register-main .login-register-title {
+  height: .83rem;
+  line-height: .83rem;
+  display: flex;
+  align-items: center;
+}
+
+.login-register-main .login-register-title .logo {
+  width: .67rem;
+  height: .6rem;
+}
+
+.login-register-main .login-register-title h5 {
+  font-size: .59rem;
+  margin-left: .13rem;
+}
+
+.login-register-main .login-register-decs {
+  font-size: .35rem;
+  margin-top: .24rem;
+}
+
+.desc-color {
+  color: #B0B0B0;
+}
+
+.operator {
+  color: #DA392B;
+  margin-left: .44rem;
+}
+a{
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+}
+input{
+  border: none;
+  font-size: .45rem;
+}

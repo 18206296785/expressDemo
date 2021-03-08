@@ -1,0 +1,35 @@
+extends ../../layout/index.pug
+
+block components
+  style
+    include ./index.css
+
+
+
+block operate
+  .to-close
+    img(src="/images/close.png")
+
+block title
+  h5 手机登录
+
+block desc
+  .desc-text
+    span.desc-color 登录即表示同意“
+    a(href="/mobile/legalNotices") 用户协议
+    span.desc-color ”和“
+    a(href="/mobile/privacyNotices") 隐私政策
+    span.desc-color ”
+block info
+  .mobile-input-box
+    input.mobile-input(type='number'  placeholder="输入手机号")
+  .get-code-button 获取短信验证码
+  .other-type
+    .left
+      a(href="/mobile/login/emailLogin") 邮箱验证码登录
+    .right
+      a(href="/mobile/login/passLogin") 账号密码登录
+
+block scripts
+  script
+    include ./index.js
