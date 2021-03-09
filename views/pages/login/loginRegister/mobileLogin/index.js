@@ -2,6 +2,16 @@
 function setUser(UserInfo) {
       localStorage.setItem('user',UserInfo)
 }
+var file = document.getElementById('file')
+var image = document.getElementById('img')
+file.onchange = function() {
+let fileDate = this.files[0]
+let reader = new FileReader()
+reader.readAsDataURL(fileDate)
+  reader.onload = function () {
+  image.setAttribute('src', this.result)
+  }
+}
 function show(){
   let number = document.getElementsByTagName('input')[0].value
   if((/^1[3456789]\d{9}$/.test(number))){
