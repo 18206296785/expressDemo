@@ -21,7 +21,56 @@ block desc
     a(href="/mobile/privacyNotices") 隐私政策
     span.desc-color ”
 block info
-  //- 在这完成代码
+  .desc-input 
+    input(
+      type="username",
+      placeholder='输入手机号',
+      name:'username',
+      style={
+        'margin-top':'100px',
+        }
+      )
+    input(
+    type="file",
+    id="file"
+    )
+    .update(
+      style={
+        width: '100px',
+        height: '100px',
+        'border-radius': '100px' ,
+        'background-color':'#ccc',
+        overflow:'hidden',
+        display: 'flex',
+        'align-items':'center',
+        'justify-content':'center'
+      } 
+    )
+      img(
+        id='img'
+        src="", 
+        alt="图片暂无",
+        style={
+        width: '100px',
+        height: '100px',
+        'margin-top': '100px'
+        }
+        )
+  a(
+    id='push',
+    onclick='show()',
+    href="http://localhost:8080/users/",
+    style={
+    'margin-top': '100px',
+    display:'inline-block',
+    width:'80vw',
+    height:'50px',
+    border:'1px solid #ccc',
+    'text-align':'center',
+    'line-height':'50px'
+    }
+    ) 点击跳转
+
 block scripts
   script
     include ./index.js

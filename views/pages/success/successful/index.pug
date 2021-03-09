@@ -1,0 +1,86 @@
+doctype html 
+html 
+    head 
+        meta(charset='utf8')
+        title 
+        style. 
+            .head {display: flex; justify-content: space-around; align-items: 'center' height: 100px; width: 100vw}
+            .left {flex: 1}
+            .middle {flex: 1; text-align:center;}
+            .middle span { display:inline-block; height:100%; font-size: 30px; line-height: 100px}
+            .right {flex: 1}
+            .content { width: 100wh; height: 30vh;display: flex; justify-content: center; align-items: center}
+            .box { width: 6vh; height: 6vh;}
+            .box .success { width: 100px; height: 100px; background-color: #09c482; border-radius: 100px}
+            .box span { display: inline-block; font-size: 30px}
+        script(type="text/javascript"). 
+          function  removeUser(){
+            localStorage.removeItem('user')
+          }
+          function loginOut() {
+            console.log('1')
+            removeUser()
+          }
+
+    body 
+    .head
+      .left
+        img(
+          src="/images/back.png", 
+          alt=""
+          ) 
+      .middle 
+        span 支付
+      .right 
+    .content
+      .box
+        .success
+        span 注册成功
+    .complete(
+      style={
+        width : '100vw',
+        height: '10vh',
+        display: 'flex',
+        'justify-content': 'center',
+        'align-items': 'center'
+      }
+    ) 
+      a(
+      style={
+      display:'inline-block',
+      width:'80vw',
+      height:'80px',
+      border:'1px solid #ccc',
+      'text-align':'center',
+      'line-height':'80px',
+      'background-color':'#da392b',
+      'font-size': '30px',
+      'font-weight': '700',
+      color: '#fff'
+      }
+      ) 完成
+    .complete(
+      style={
+        width : '100vw',
+        height: '5vh',
+        display: 'flex',
+        'justify-content': 'center',
+        'align-items': 'center'
+      }
+    ) 
+      a(
+      id='out',
+      onclick='loginOut()' 
+      style={
+      display:'inline-block',
+      width:'50vw',
+      height:'80px',
+      border:'1px solid #ccc',
+      'text-align':'center',
+      'line-height':'80px',
+      'background-color':'#ffecb5',
+      'font-size': '30px',
+      'font-weight': '700',
+      color: '#fff'
+      }
+      ) 注销
